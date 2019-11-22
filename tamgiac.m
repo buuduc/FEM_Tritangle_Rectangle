@@ -77,6 +77,6 @@ kpt1 = (c1*t/A)*[k11 k12 k13 k14 k15 k16;...
     k51 k52 k53 k54 k55 k56;...
     k61 k62 k63 k64 k65 k66];
 disp(kpt1)
-bool =[ 2*n1 2*n1-1 2*n2 2*n2-1 2*n3 2*n3-1]
+bool =[2*n1-1 2*n1 2*n2-1 2*n2 2*n3-1 2*n3]
 ktt(bool,bool)=ktt(bool,bool)+kpt1
     
