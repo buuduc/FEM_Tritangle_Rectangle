@@ -1,4 +1,4 @@
-function tugiac(n1,n2,n3,n4,v,E)
+function RECTANG(n1,n2,n3,n4,v,E)
 global point
 global h
 global ktt
@@ -9,7 +9,6 @@ end
 % E=2E11;
 global style
 if style=='bd'
-    h=1;
     c1=((1-v)*E)/((1+v)*(1-2*v));
     c2=v/(1-v);
 else

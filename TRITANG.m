@@ -1,4 +1,4 @@
-function tamgiac(n1,n2,n3,v,E)
+function TRITANG(n1,n2,n3,v,E)
 global point
 global h
 global ktt
@@ -9,25 +9,24 @@ end
 % E=2E11;
 global style
 if style=='bd'
-    h=1;
     c1=((1-v)*E)/((1+v)*(1-2*v));
     c2=v/(1-v);
 else
     c1=E/(1-v^2);
     c2=v;
 end
+t=h
 k=(1-c2)/2;
 x=[point(n1,2) point(n2,2) point(n3,2)];
 y=[point(n1,3) point(n2,3) point(n3,3)];
-p=20E3;
-t=10E-3; %%chi co o ung suat phang
+% t=10E-3; %%chi co o ung suat phang
 xij=x(1)-x(2);
 xjk=x(2)-x(3);
 xik=x(1)-x(3);
 yij=y(1)-y(2);
 yjk=y(2)-y(3);
 yik=y(1)-y(3);
-A=(1/2)*2*2;
+A=(1/2)*det([ [ 1 1 1]' x' y'])
 k11 = yjk^2+k*xjk^2;
 k12 = -c2*xjk*yjk-k*yjk*xjk;
 k13 = -yik*yjk - k*xjk*xik;
