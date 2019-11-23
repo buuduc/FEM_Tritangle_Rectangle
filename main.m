@@ -3,7 +3,7 @@ clc
 % global style
 % global h
 % style='us'
-determine_problem('biendangphang')
+determine_problem('ungsuatphang',10e-3)
 
 
 % node(0,0)
@@ -26,8 +26,9 @@ node(6,0)
 node(8,0)
 node(6,2)
 node(2,2)
-TRITANG(1,2,6,0.3,2e11)
+% TRITANG(1,2,6,0.3,2e11)
 % TRITANG(3,4,5,0.3,2e11)
+RECTANG(2,3,5,6,0.3,2E11)
 % RECTANG(2,3,5,6,0.3,2E11)
 % distribute_F(2,3,10,0)
 % boundary(1,'all')
