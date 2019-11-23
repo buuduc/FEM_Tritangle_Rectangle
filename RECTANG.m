@@ -2,7 +2,7 @@ function RECTANG(n1,n2,n3,n4,v,E)
 global point
 global h
 global ktt
-if size(ktt,1)<3*size(point,1)
+if size(ktt,1)<2*size(point,1)
     ktt(2*size(point,1),2*size(point,1))=0
 end
 % v=0.3;

@@ -2,13 +2,13 @@ function TRITANG(n1,n2,n3,v,E)
 global point
 global h
 global ktt
-if size(ktt,1)<3*size(point,1)
+if size(ktt,1)<2*size(point,1)
     ktt(2*size(point,1),2*size(point,1))=0
 end
 % v=0.3;
 % E=2E11;
 global style
-if style=='bd'
+if style == 'bd'
     c1=((1-v)*E)/((1+v)*(1-2*v));
     c2=v/(1-v);
 else
@@ -27,6 +27,13 @@ yij=y(1)-y(2);
 yjk=y(2)-y(3);
 yik=y(1)-y(3);
 A=(1/2)*det([ [ 1 1 1]' x' y'])
+
+xij=x(1)-x(2);
+xjk=x(2)-x(3);
+xik=x(1)-x(3);
+yij=y(1)-y(2);
+yjk=y(2)-y(3);
+yik=y(1)-y(3);
 k11 = yjk^2+k*xjk^2;
 k12 = -c2*xjk*yjk-k*yjk*xjk;
 k13 = -yik*yjk - k*xjk*xik;
@@ -69,12 +76,13 @@ k64=k46;
 
 k65=k56;
 %%%%%
-kpt1 = (c1*t/A)*[k11 k12 k13 k14 k15 k16;...
+kpt1 = (c1*t/(4*A))*[k11 k12 k13 k14 k15 k16;...
     k21 k22 k23 k24 k25 k26;...
     k31 k32 k33 k34 k35 k36;...
     k41 k42 k43 k44 k45 k46;...
     k51 k52 k53 k54 k55 k56;...
     k61 k62 k63 k64 k65 k66];
+
 disp(kpt1)
 bool =[2*n1-1 2*n1 2*n2-1 2*n2 2*n3-1 2*n3]
 ktt(bool,bool)=ktt(bool,bool)+kpt1
