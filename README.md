@@ -20,3 +20,4 @@ IF YOU NOT FOLLOW IT, YOUR SOLUTION IS WRONG
     direct: direction of fixed ( 'ux' ,'uy', or 'all')
  - input Force for that problem with concent_F and distribute_F function
  - SOLVE()
+ 3) I have a example problem at problem.png, and I solve it in main.m
