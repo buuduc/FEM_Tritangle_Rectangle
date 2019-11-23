@@ -11,4 +11,3 @@ if size(F,1)<2*m
     F(2*m,1)=0
 end
 F(bool,1)=F(bool,1)+(h*L/2)*[fx;fy;fx;fy]
-
