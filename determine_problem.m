@@ -4,14 +4,14 @@ global style
 
 switch nargin
     case 1
-        if type=='ungsuatphang'
+        if type=='biendangphang'
             h=1;
-            style='us'
+            style='bd'
         end
     case 2
-        if type=='biendangphang'
+        if type=='ungsuatphang'
         h=thin;
-        style='bd'
+        style='us'
         end
 end
 end
