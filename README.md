@@ -7,6 +7,7 @@
 WHY ? BECAUSE THE THEORY I USE IN THIS PROGRAM IS MADE FOR THAT CONVENTION.
 IF YOU NOT FOLLOW IT, YOUR SOLUTION IS WRONG
 2) How to use this code program
+ - determine style of problem 
  - input node of problem
  node(x,y)
  x:coordinate of x
