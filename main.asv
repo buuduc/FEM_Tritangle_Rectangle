@@ -1,4 +1,4 @@
-clear all;
+clear all
 clc
 % global style
 % global h
@@ -39,7 +39,7 @@ boundary(4,'uy')
 boundary(5,'all')
 boundary(6,'all')
 SOLVE()
-Stress(1)
+Stress(1,2,3)
 % TRITANG(3,4,5,0.3,2e11)
 % RECTANG(2,3,5,6,0.3,2E11)
 % RECTANG(2,3,5,6,0.3,2E11)
@@ -48,7 +48,7 @@ Stress(1)
 % boundary(4,'all')
 % SOLVE()
 
-% determine_problem('ungsuatphanazag',0.4)
+% determine_problem('ungsuatphang',0.4)
 % node(0,0)
 % node(0,1.5)
 % node(0,3)

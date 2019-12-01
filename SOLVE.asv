@@ -12,16 +12,12 @@ if size(bound,1)<size(ktt,1)
 end
 stt=find(bound==-1);
 displace=find(bound==0);
-Kbd=K
-Fbd=F
 K(stt,:)=[];
 K(:,stt')=[];
 F(stt,:)=[];
 u=inv(K)*F;
+Ktt*cv'-tai
 bound(displace,:)=u;
 bound(stt,:)=0;
-phanluc= Kbd*bound-Fbd
 fprintf('displacement: \n')
 disp(bound)
-fprintf('reaction: \n')
-disp(phanluc)
