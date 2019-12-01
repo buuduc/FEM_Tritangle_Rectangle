@@ -1,2 +1,0 @@
-function testt(varargin)
-varargin
